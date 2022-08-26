@@ -69,7 +69,7 @@ def prepare_mini_librispeech(
     logger.info(
         f"Creating {save_json_train}, {save_json_valid}, and {save_json_test}"
     )
-    extension = [".flac"]
+    extension = [".wav"]
     wav_list = get_all_files(train_folder, match_and=extension)
 
     # Random split the signal list into train, valid, and test sets.
